@@ -1,7 +1,4 @@
-    % DIGITAL IMAGE PROCESSING
-    % HOMEWORK-4 MATLAB CODE
-    % SUBMITTED BY CHAKRAPANI SARALAYA
-   
+
     clc
     clear all
     close all
