@@ -1,7 +1,4 @@
-    % DIGITAL IMAGE PROCESSING
-    % HOMEWORK-4 MATLAB CODE
-    % SUBMITTED BY CHAKRAPANI SARALAYA, SAURABH PATIL, PRANAV PHADKE
-    
+
     % This program accepts the desired number of gray levels in a image as
     % input and reproduces output image with the specified gray levels
     
