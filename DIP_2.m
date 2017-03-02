@@ -1,7 +1,4 @@
     % EEEN-5337 DIGITAL IMAGE PROCESSING ASSIGNMENT-2
-    % submitted by: Chakrapani Saralaya, K00272979
-    % Dated: 09-09-2011
-    
     % MATLAB CODE
     close all;
     clear all;
