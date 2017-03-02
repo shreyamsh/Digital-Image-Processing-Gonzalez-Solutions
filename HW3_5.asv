@@ -1,0 +1,28 @@
+% Homework #3 Solution 5
+% Read the image
+f=imread('sunflower.png');
+whos;
+%figure, imshow(f), title('Original image');
+
+%Image is converted to grayscale 
+J=rgb2gray(f);
+size(J);
+%figure, imshow(J), title('Grayscale image');
+%figure, imhist(J), title('Histogram of the image');
+
+% 15x15 filter 
+
+%w=ones(15);
+%gd=imfilter(J,w);
+%figure, imshow(gd, []);
+
+%3x3 filter applied to the image (All elements of the filter are 1's i.e averaging fil)
+a=5*ones(1,1);
+meanFilter=fspecial('average',[3 3]);
+toShow = imfilter(J,meanFilter);
+figure,imshow(toShow);
+
+% second method
+%h=ones(15,15)/225;
+%I2=imfilter(J,h);
+%figure, imshow(I2), title('Filtered image by using 15x15 filter');

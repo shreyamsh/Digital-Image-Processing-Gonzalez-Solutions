@@ -1,0 +1,17 @@
+
+% Homework #3, solution 
+f=imread ('moon.jpg');
+figure, imshow(f), title('Original image');
+j=rgb2gray(f);
+figure, imhist(j), title('histogram of the image');
+
+
+%w=fspecial('laplacian',0);
+
+%This will generate image (b) with ALL pixels positive.
+%Check workspace
+
+%g1=imfilter(f,w,'replicate');
+%figure,imshow(g1,[]), title('Result of Laplacian filter');
+%lti=imsubtract(f,g1);
+%figure, imshow(lti), title('Laplacian filter subtracted from the original image');

@@ -1,0 +1,35 @@
+    % DIGITAL IMAGE PROCESSING
+    % HOMEWORK-5 MATLAB CODE
+    % SUBMITTED BY CHAKRAPANI SARALAYA, SAURABH PATIL, PRANAV PHADKE
+    
+    % FOR A GIVEN IMAGE APPLY A 15X15 FILTER (ALL ELEMENTS OF FILTER ARE 1s)
+    
+    clc
+    clear all
+    close all
+    I = imread('PIC.jpg');
+    figure(); imshow(I); title('Original Image');
+    
+    % Convert RGB image to grayscale
+    I_gray = rgb2gray(I);
+    figure(); imshow(I_gray); title('Grayscale Image');
+    
+    
+    
+    
+    % APPLYING LOG TRANSFORMATION
+    J = im2double(I);
+    disp('LOG TRANSFORM: s = c*log(1+r)')
+    disp('')
+    c = input('Enter the value of CONST,c = ');
+    s = c * log10(1+J);
+    figure();
+    imshow(s); title('LOG TRANSFORMED IMAGE');
+
+    % APPLYING POWER LAW (GAMMA) TRANSFORMATION TO LOG TRANSFORMED IMAGE
+    disp(' ');
+    disp('GAMMA TRANSFORM: s = c*(r)^gamma');
+    c2 = input('Enter the value for CONST,c = ');
+    gamma = input('Enter gamma value = ');
+    s2 = c2 * (J).^gamma;
+    figure(); imshow(s2); title('GAMMA TRANSFORMED IMAGE');

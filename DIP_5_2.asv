@@ -1,0 +1,26 @@
+% DIGITAL IMAGE PROCESSING
+% HOMEWORK-5 MATLAB CODE
+% SUBMITTED BY CHAKRAPANI SARALAYA, SAURABH PATIL, PRANAV PHADKE
+% APPLYING LAPLACIAN FILTER ON A BLURRY IMAGE
+
+clear all
+close all
+clc
+% Read image into MATLAB
+I_blur = imread('blur.jpg');
+%I_blur = rgb2gray(I);
+figure(); imshow(I_blur); title('BLURRY IMAGE'); 
+
+% Define laplacian mask
+lap_mask = [1 1 1 ; 1 -8 1 ; 1 1 1];
+lap_mask2 = [0 1 0 ; 1 -4 1 ; 0 1 0];
+
+
+% laplacian image
+lap_I = sp_filter1(I_blur,lap_mask);
+lap_I2 = sp_filter(I_blur,lap_mask2);
+figure(); imshow(lap_I); title('LAPLACIAN FILTERED IMAGE');
+
+% Sharpening blurry image
+I_sharp = I_blur - lap_I;
+figure(); imshow(I_sharp); title('IMAGE SHARPENED using -8 ');

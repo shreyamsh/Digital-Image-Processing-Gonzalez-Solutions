@@ -1,0 +1,16 @@
+
+%MATLAB code to reduce the gray levels in an image from 256 to 2
+I=imread('shrey.jpg');
+I=rgb2gray(I);
+
+%256 level gray image
+[I256,map256]=gray2ind(I,256);
+
+%128 level gray image
+[I128,map128]=gray2ind(I,128);
+
+%64 level gray image
+[I64,map64]=gray2ind(I,64);
+
+figure(1),subplot(221), subimage(I),title('I'), subplot(222),subimage(I256,map256), title('I256'),subplot(223),subimage(I128,map128),title('I128'),subplot(224),subimage(I64,map64),title('I64'),pause
+
