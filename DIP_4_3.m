@@ -1,6 +1,4 @@
-    % DIGITAL IMAGE PROCESSING
-    % HOMEWORK-4 MATLAB CODE
-    % SUBMITTED BY CHAKRAPANI SARALAYA, SAURABH PATIL, PRANAV PHADKE
+
     
     % This program is to experiment with fig3.8(a) given in text book and
     % enhance the image using intensity transformations : 
