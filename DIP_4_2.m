@@ -1,6 +1,6 @@
     % DIGITAL IMAGE PROCESSING
     % HOMEWORK-4 MATLAB CODE
-    % SUBMITTED BY CHAKRAPANI SARALAYA, SAURABH PATIL, PRANAV PHADKE
+   
     
     % This program performs the task of zooming and shrinking an image 
     % by factor specified as input.
